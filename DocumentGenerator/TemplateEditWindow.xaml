@@ -1,0 +1,7 @@
+<Window x:Class="DocumentGenerator.TemplateEditWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Налаштування шаблону" Height="250" Width="440" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Background="#F8FAFC">
+    <Grid Margin="20"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+        <TextBlock Text="Назва шаблону" FontWeight="SemiBold"/><TextBox x:Name="NameBox" Grid.Row="1"/>
+        <TextBlock Text="Категорія" Grid.Row="2" FontWeight="SemiBold"/><TextBox x:Name="CategoryBox" Grid.Row="2" Margin="100,0,0,8"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom"><Button Content="Скасувати" IsCancel="True"/><Button Content="Зберегти" Background="#2457A7" Foreground="White" IsDefault="True" Click="Save_Click"/></StackPanel>
+    </Grid>
+</Window>
